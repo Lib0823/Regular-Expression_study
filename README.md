@@ -62,7 +62,7 @@ _, -, ., +, 등: 기호<br>
 <br>
 <h3>Example</h3>
 <i><code>import re</code></i><hr>
-<b>문자열에서 패턴 찾기</b><
+<b>문자열에서 패턴 찾기</b>
 <code>
   pattern = r'apple'
   text = 'I like apple.'
