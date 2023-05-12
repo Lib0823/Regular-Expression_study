@@ -61,7 +61,7 @@ _, -, ., +, 등: 기호<br>
 
 
 
-<code>
+
 import re
 
 # 문자열에서 패턴 찾기
@@ -94,6 +94,6 @@ pattern = r'\s+'
 text = 'I like apple. I have an apple.'
 results = re.split(pattern, text)
 print('분리된 문자열:', results)
-  </code>
+ 
 
 
