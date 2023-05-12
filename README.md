@@ -61,10 +61,9 @@ _, -, ., +, 등: 기호<br>
 
 
 
-
-import re
-
+<code>
 # 문자열에서 패턴 찾기
+<b>import re</b><br>
 pattern = r'apple'
 text = 'I like apple.'
 result = re.search(pattern, text)
@@ -74,6 +73,7 @@ else:
     print('일치하는 패턴이 없습니다.')
 
 # 문자열에서 모든 패턴 찾기
+<b>import re</b><br>
 pattern = r'apple'
 text = 'I like apple. I have an apple.'
 results = re.findall(pattern, text)
@@ -83,6 +83,7 @@ else:
     print('일치하는 패턴이 없습니다.')
 
 # 패턴으로 문자열 대체하기
+<b>import re</b><br>
 pattern = r'apple'
 replace = 'orange'
 text = 'I like apple. I have an apple.'
@@ -90,10 +91,11 @@ result = re.sub(pattern, replace, text)
 print('바뀐 문자열:', result)
 
 # 패턴으로 문자열 분리하기
+<b>import re</b><br>
 pattern = r'\s+'
 text = 'I like apple. I have an apple.'
 results = re.split(pattern, text)
 print('분리된 문자열:', results)
- 
+</code>
 
 
