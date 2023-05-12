@@ -61,37 +61,42 @@ _, -, ., +, 등: 기호<br>
 
 <br>
 <h3>Example</h3>
-<i>import re</i><hr>
+<i><code>import re</code></i><hr>
 <b>문자열에서 패턴 찾기</b><br>
-pattern = r'apple'<br>
-text = 'I like apple.'<br>
-result = re.search(pattern, text)<br>
-if result:<br>
-    print('찾은 패턴:', result.group())<br>
-else:<br>
-    print('일치하는 패턴이 없습니다.')<br>
-<br>
+<code>
+pattern = r'apple'
+text = 'I like apple.'
+result = re.search(pattern, text)
+if result:
+    print('찾은 패턴:', result.group())
+else:
+    print('일치하는 패턴이 없습니다.')
+</code>
+
 <b>문자열에서 모든 패턴 찾기</b><br>
-pattern = r'apple'<br>
-text = 'I like apple. I have an apple.'<br>
-results = re.findall(pattern, text)<br>
-if results:<br>
-    print('찾은 패턴:', results)<br>
-else:<br>
-    print('일치하는 패턴이 없습니다.')<br>
-<br>
+<code>
+pattern = r'apple'
+text = 'I like apple. I have an apple.'
+results = re.findall(pattern, text)
+if results:
+    print('찾은 패턴:', results)
+else:
+    print('일치하는 패턴이 없습니다.')
+</code>
 <b>패턴으로 문자열 대체하기</b><br>
-pattern = r'apple'<br>
-replace = 'orange'<br>
-text = 'I like apple. I have an apple.'<br>
-result = re.sub(pattern, replace, text)<br>
-print('바뀐 문자열:', result)<br>
-<br>
+<code>
+pattern = r'apple'
+replace = 'orange'
+text = 'I like apple. I have an apple.'
+result = re.sub(pattern, replace, text)
+print('바뀐 문자열:', result)
+</code>
 <b>패턴으로 문자열 분리하기</b><br>
-pattern = r'\s+'<br>
-text = 'I like apple. I have an apple.'<br>
-results = re.split(pattern, text)<br>
-print('분리된 문자열:', results)<br>
-<br>
+<code>
+pattern = r'\s+'
+text = 'I like apple. I have an apple.'
+results = re.split(pattern, text)
+print('분리된 문자열:', results)
+</code>
 
 
